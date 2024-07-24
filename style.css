@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.calendar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.month {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.month h2 {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px;
+}
+
+.calendar-grid .header,
+.calendar-grid .workday,
+.calendar-grid .offday,
+.calendar-grid .empty {
+  text-align: center;
+  padding: 10px 5px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.calendar-grid .header {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.calendar-grid .workday {
+  background-color: #b3e6b3;
+}
+
+.calendar-grid .offday {
+  background-color: #e6b3b3;
+}
+
+.calendar-grid .empty {
+  visibility: hidden;
+}
