@@ -21,7 +21,7 @@ function generateYearCalendar(year) {
     const calendarGrid = document.createElement('div');
     calendarGrid.className = 'calendar-grid';
 
-    const daysHeader = ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+    const daysHeader = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
     let headerRow = '';
     for (const day of daysHeader) {
       headerRow += `<div class="header">${day}</div>`;
