@@ -7,7 +7,7 @@ function generateYearCalendar(year) {
     'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
   ];
 
-  const startWorkCycle = new Date(year, 0, 5); // Начало года
+  const startWorkCycle = new Date(year, 0, 7); // Начало года
 
   for (let month = 0; month < 12; month++) {
     const daysInMonth = new Date(year, month + 1, 0).getDate();
